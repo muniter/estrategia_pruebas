@@ -1,0 +1,132 @@
+name: Playwright VRT Tests
+on:
+  push:
+    branches:
+     - main
+  pull_request:
+    branches:
+     - main
+
+env:
+  GHOST_VERSION: 4.41
+  GHOST_VERSION_PRE: 4.36
+
+jobs:
+  e2e:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Setup docker
+      uses: docker-practice/actions-setup-docker@v1
+    - name: Pull docker image
+      run: docker image pull ghost:${GHOST_VERSION}
+    - name: Install dependencies
+      run: npm ci
+    - name: Install Playwright
+      if: always()
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test --project=regular --workers 1
+
+  data:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Setup docker
+      uses: docker-practice/actions-setup-docker@v1
+    - name: Pull docker image
+      run: docker image pull ghost:${GHOST_VERSION}
+    - name: Install dependencies
+      run: npm ci
+    - name: Install Playwright
+      if: always()
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests
+      run: npx playwright test --project=data --workers 1
+
+  vrt:
+    permissions:
+      contents: write
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    env:
+      GHOST_VERSION_PRE: 4.36
+      GHOST_VRT: true
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        path: repo
+
+    - uses: actions/checkout@v3
+      with:
+        path: gh-pages
+        ref: gh-pages
+        fetch-depth: 10
+
+    - name: Setup nodejs
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+
+    - name: Setup docker
+      uses: docker-practice/actions-setup-docker@v1
+
+    - name: Pull docker image
+      run: |
+        docker image pull ghost:${GHOST_VERSION_PRE}
+        docker image pull ghost:${GHOST_VERSION}
+
+    - name: Install node dependencies
+      working-directory: repo
+      run: npm ci
+
+    - name: Install Playwright
+      if: always()
+      working-directory: repo
+      run: npx playwright install --with-deps
+
+    - name: Run Playwright tests with pre version
+      working-directory: repo
+      run: GHOST_VERSION=${GHOST_VERSION_PRE} npx playwright test --project=regular --workers 1
+
+    - name: Run playwright tests with post version
+      working-directory: repo
+      run: GHOST_VERSION=${GHOST_VERSION} npx playwright test --project=regular --workers 1
+
+    - name: Generate the html report
+      working-directory: repo
+      run: npm run reporter -- --prev ${GHOST_VERSION_PRE} --post ${GHOST_VERSION}
+
+    - name: Setup gh-pages
+      working-directory: gh-pages
+      run: |
+        rm -rf screenshots/playwright playwright.html || true
+        mv ../repo/playwright.html playwright.html
+        mkdir screenshots || true
+        mv ../repo/screenshots/playwright screenshots/playwright
+
+    - name: Commit files
+      working-directory: gh-pages
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        # Move to the first commit of the repository
+        git reset --soft `git rev-list --max-parents=0 HEAD`
+        git add --all
+        git commit -m "VRT reports update" -a
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        force: true
+        directory: gh-pages

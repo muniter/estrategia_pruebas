@@ -1,0 +1,26 @@
+// Full combined reports
+export interface Report {
+  prev: TestSuiteReportFormat,
+  post: TestSuiteReportFormat,
+  diff?: TestSuiteReportFormat,
+}
+
+// Each test suite produces one like this
+export interface TestSuiteReportFormat {
+  version: string,
+  scenarios: Array<ScenarioReportFormat>,
+}
+
+export interface ScenarioStep {
+  name: string,
+  image: string,
+  base64?: boolean,
+  data?: Record<string, any>,
+}
+
+// Each scenario produces one of this
+export interface ScenarioReportFormat {
+  name: string,
+  file: string,
+  steps: Array<ScenarioStep>
+}
