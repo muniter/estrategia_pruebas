@@ -1,64 +1,47 @@
-# Automated Software Testing
+# Ejecución estrategia de pruebas
 
-This repository is an educational assignment.
+> This repository is an educational assignment.
 
 - Aplicación bajo pruebas: [Ghost](https://github.com/TryGhost/Ghost)
 - Versión: 4.41.1
-- Versión for VRT: 4.36
+- Versión a comparar VRT: 4.36
 
 ## Quick Links:
 
-Apartes en la Wiki:
+Estrategia:
 
-- [E2E Testing Playwright](https://github.com/muniter/e2e_testing_assignment/wiki/E2E)
-- [Visual Regression Testing Ressemble JS](https://github.com/muniter/e2e_testing_assignment/wiki/VRT)
-- [Data Validation Scenarios](https://github.com/muniter/e2e_testing_assignment/wiki/DV)
+- [Estrategia de Pruebas](https://docs.google.com/document/d/1uYQX9biop16W96_n8FHOHEGumP9cW_qx1ooGHgaSzn0/export?format=pdf)
+- [Inventario de pruebas manuales exploratorias](https://docs.google.com/spreadsheets/u/0/d/1TR15trADeCwL9MpPPKpiI_Uum6LLXTJB478EpZiyrg0/export?format=pdf)
 
-Reportes VRT:
+Resultados:
+- [Inventario de pruebas general](https://github.com/muniter/estrategia_pruebas/blob/master/doc/inventario.md)
+- [Instrucciones y descripción de pruebas manuales](https://github.com/muniter/estrategia_pruebas/blob/master/doc/pruebas_manuales.md)
 
-- [Playwright VRT](https://muniter.github.io/e2e_testing_assignment/playwright.html)
+Reportes:
+- [Reporte VRT](https://muniter.github.io/estrategia_pruebas/playwright.html)
+- [Informe Resultados Semana 1](https://github.com/muniter/estrategia_pruebas/blob/master/doc/semana1.md)
 
 Instrucciones de ejecución:
-  - [E2E Testing](#e2e-testing)
-  - [VRT Testing](#visual-regression-testing)
-  - [Data Validation Testing](#data-validation-testing)
-
-## Funcionalidades bajo prueba
-
-Las siguientes son las funcionalidades elegidas para realizar las pruebas.
-
-| No  | Nombre                       | Descripción                                                                                                            |
-| --- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Login**                    | Se puede hacer signin de un usuario registrado previamente.                                                            |
-| 2   | **Crear una publicación**    | Se puede crear una publicación, esta es la unidad mínima de contenido de Ghost.                                        |
-| 3   | **Editar una publicación**   | Se puede editar todos los detalles de una publicación ya creada.                                                       |
-| 4   | **Eliminar una publicación** | Se puede eliminar una publicación ya creada.                                                                           |
-| 5   | **Crear un member**          | Se crean los miembros de la página, aquellos que están suscritos a su contenido, se provee un nombre, correo y labels. |
-| 6   | **Editar un member**         | Se puede editar todos los datos de un member ya creado.                                                                |
-| 7   | **Eliminar un member**       | Se puede eliminar un member ya creado.                                                                                 |
-| 8   | **Filtrar members**          | Se puede filtrar los miembros por nombre y otros identificadores.                                                      |
-| 9   | **Crear un tag**             | Se puede crear un tag,  llenando todos sus campos                                                                      |
+- [E2E Testing](#e2e-testing)
+- [VRT Testing](#visual-regression-testing)
 
 # Instrucciones
 
-Los archivos de playwwright se encuentran en [e2e-playwright/](https://github.com/muniter/e2e_testing_assignment/tree/main/e2e-playwright/tests)
+Los archivos de pruebas se encuentran en [e2e-playwright/](https://github.com/muniter/estrategia_pruebas/tree/master/e2e-playwright/tests)
 
-Ambas herramientas están corriendo en **Continuous Integration** en este repositorio, puede [navegar a actions](https://github.com/muniter/e2e_testing_assignment/actions) para ver los últimos resultados de los test, o puede ver el [listado de commits](https://github.com/muniter/e2e_testing_assignment/commits/main) para ver su estado final.
+La herramienta está corriendo en **Continuous Integration** en este repositorio, puede [navegar a actions](https://github.com/muniter/estrategia_pruebas/actions) para ver los últimos resultados de los test, o puede ver el [listado de commits](https://github.com/muniter/estrategia_pruebas/commits/master) para ver su estado final.
 
 Los workflows, o definición de procedimientos están definidos de la siguiente manera:
 
-1. [Playwright (E2E & Data Validation)](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright.yml)
-1. [Playwright VRT](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright_vrt.yml#L1)
+1. [Tests](https://github.com/muniter/estrategia_pruebas/blob/master/.github/workflows/test.yml)
 
 Estos corren con cada commit a master en el repositorio.
 
 ## E2E Testing
 
-Instrucciones para correr pruebas E2E en playwright.
+Instrucciones para correr pruebas E2E.
 
-### Playwright E2E
-
-[Ejemplo en CI](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright.yml)
+[Ejemplo en CI](https://github.com/muniter/estrategia_pruebas/blob/master/.github/workflows/test.yml#L15)
 
 Instrucciones para instalar en máquina en Unix like systems (Linux, Mac OS (**no probado**)).
 
@@ -73,12 +56,20 @@ npm install
 - Chromium
 - Docker
 
-#### 3. Correr las pruebas:
-
-**NOTA**: El [global setup](https://github.com/muniter/e2e_testing_assignment/blob/main/global-setup.ts) de playwright se encargará de levantar una instancia de Ghost usando un contenedor en el puerto 9333. por lo cual solo el siguiente llamado es suficiente para hacer el bootstrap.
+Instalar playwright browsers:
 
 ```bash
-npm run test-pw-regular
+npx playwright install
+```
+
+Si tiene problemas para instalar siga [la guía oficial de instalación de playwright](https://playwright.dev/docs/intro#installation)
+
+#### 3. Correr las pruebas:
+
+**NOTA**: El [global setup](https://github.com/muniter/estrategia_pruebas/blob/master/global-setup.ts) de playwright se encargará de levantar una instancia de Ghost usando un contenedor en el puerto 9333. por lo cual solo el siguiente llamado es suficiente para hacer el bootstrap.
+
+```bash
+npm run e2e
 ```
 
 **NOTA: este comando se encargará de recrear el contenedor de ghost y su base de datos en cada ocasión que corra**
@@ -87,71 +78,48 @@ npm run test-pw-regular
 
 Si tiene problemas para instalar o correr playwright [dirígase a la guía de instalación](https://playwright.dev/docs/intro#installation)
 
-También le puede servir verificar como las pruebas [automátizadas se definen en CI](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright.yml)
+También le puede servir verificar como las pruebas [automátizadas se definen en CI](https://github.com/muniter/estrategia_pruebas/blob/master/.github/workflows/test.yml)
 
 ---
 ## Visual Regression Testing
 
 Instrucciones para correr pruebas de VRT en playwright.
 
-Actualmente las pruebas de VRT se corren en cada commit de este repositorio, como se puede ver en los siguientes workflows:
+Actualmente las pruebas de VRT se corren en cada commit de este repositorio, como se puede ver en el siguiente workflow:
 
-- [Playwright VRT](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright_vrt.yml#L1)
+- [VRT](https://github.com/muniter/estrategia_pruebas/blob/master/.github/workflows/test.yml#L35)
 
-Los resultados son publicados automáticamente a la rama [gh-pages](https://github.com/muniter/e2e_testing_assignment/tree/gh-pages) de este repositorio y por lo tanto se sirve como contenido web en los siguientes links:
+Los resultados son publicados automáticamente a la rama [gh-pages](https://github.com/muniter/estrategia_pruebas/tree/gh-pages) de este repositorio y por lo tanto se sirve como contenido web en los siguientes links:
 
-- [Playwright VRT results](https://muniter.github.io/e2e_testing_assignment/playwright.html)
+- [VRT results](https://muniter.github.io/estrategia_pruebas/playwright.html)
 
 Para correr las pruebas en modos VRT se hace necesario lo siguiente:
 
 ---
-### Playwright VRT
+### Instrucciones VRT
 
-Siga las instrucciones descritas para correr [playwright E2E](#playwright-e2e) **ignorando el paso 3**, y luego:
+Siga las instrucciones descritas para correr [E2E Testing](#e2e-testing) **ignorando el paso 3**, y luego:
 
 #### 1. Run the test suite in both Ghost versions
 
 ```bash
-CI=1 GHOST_VRT=1 GHOST_VERSION=4.41.1 npx playwright test --workers 1
-CI=1 GHOST_VRT=1 GHOST_VERSION=4.36 npx playwright test --workers 1
+GHOST_VRT=1 GHOST_VERSION=4.41.1 npm run e2e
+GHOST_VRT=1 GHOST_VERSION=4.36 npm run e2e
 ```
 
 #### 2. Artifacts processing and report generation
 
+Para generar el reporte:
+
 ```bash
-npm run reporter -- --process playwright --prev 4.36 --post 4.41.1
+npm run reporter -- --prev 4.36 --post 4.41.1
 ```
 
-Esto generará un archivo en la base del repositorio [`playwright.html`](https://muniter.github.io/e2e_testing_assignment/playwright.html).
+Esto generará un archivo en la base del repositorio [`playwright.html`](https://muniter.github.io/estrategia_pruebas/playwright.html) este es el reporte VRT.
 
 ---
-## Data Validation Testing
 
-Instrucciones para correr pruebas de validación de datos en playwright.
-
-Explicación e inventario: [Data Validation Scenarios](https://github.com/muniter/e2e_testing_assignment/wiki/DV)
-
-### Playwright Data
-
-[Ejemplo en CI](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright.yml#L33)
-
-Siga las instrucciones descritas para correr [playwright E2E](#playwright-e2e) **ignorando el paso 3**, y luego:
-
-#### Correr las pruebas:
-
-**NOTA**: este comando se encargará de crear/recrear el contenedor de ghost y su base de datos en cada ocasión que corra
-
-```bash
-npm run test-data
-```
-
-#### Tips
-
-Si tiene problemas para instalar o correr playwright [dirígase a la guía de instalación](https://playwright.dev/docs/intro#installation)
-
-También le puede servir verificar como las pruebas [automátizadas se definen en CI](https://github.com/muniter/e2e_testing_assignment/blob/main/.github/workflows/playwright.yml)
-
-## Authors
+## Autores
 
 - [Hector Tenazaca](https://github.com/htenezaca) (@htenezaca)
 - [Javier León Ferro](https://github.com/andesjavierleon) (@andesjavierleon)

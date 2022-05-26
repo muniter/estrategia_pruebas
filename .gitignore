@@ -116,7 +116,7 @@ features/**/**.js
 *.js
 *.d.ts
 
-screenshots/*/*/images/*.png
+screenshots/
 kraken.html
 playwright.html
 screenshots/**/*.png

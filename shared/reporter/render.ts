@@ -27,7 +27,7 @@ export function render(report: Report, program: string, destination: string, liv
   let nunjucksConfig: nunjucks.ConfigureOptions = {
     autoescape: true,
     noCache: true,
-    watch: true,
+    watch: false,
     throwOnUndefined: true,
   }
 

@@ -20,6 +20,7 @@ export class MembersPage {
   readonly actions: Locator;
   readonly deleteMember: Locator;
   readonly search: Locator;
+  readonly deleteConfirm: Locator;
 
   constructor(page: Page, testInfo: TestInfo) {
     this.page = page;
@@ -35,6 +36,7 @@ export class MembersPage {
     this.invalidEmail = page.locator('p[class="response"] >> text="Invalid Email."');
     this.actions = page.locator('button:has-text("Actions")');
     this.deleteMember = page.locator('button:has-text("Delete member")');
+    this.deleteConfirm = page.locator('.modal-footer').locator('button:has-text("Delete member")');
     this.search = page.locator('input[placeholder="Search members..."]');
   }
 
@@ -107,12 +109,13 @@ export class MembersPage {
 
   async createMember(name: string, email: string, notes: string, back: boolean = true, label?: string) {
     await this.open()
-    await takeScreenshot(this.page, this.testInfo, 'create_member');
     await this.newMember.click();
     let timer = this.page.waitForTimeout(3000);
+    await takeScreenshot(this.page, this.testInfo, 'Create member');
     await this.fillValues({ name, email, notes, label });
     let networkidle = this.page.waitForLoadState('networkidle');
     await this.save.click();
+    await takeScreenshot(this.page, this.testInfo, 'Member saved');
     await networkidle;
 
     await timer;
@@ -125,10 +128,25 @@ export class MembersPage {
 
   async deleteCurrentMember() {
     let navigation = this.page.waitForNavigation({ waitUntil: 'networkidle' });
-    await this.actions.click();
+    let watchdog = [
+      this.actions.elementHandle({ timeout: 5000 }),
+      this.deleteMember.elementHandle({ timeout: 5000 }),
+    ]
+    let res = await Promise.race(watchdog);
+    let content = await res?.textContent()
+    await res?.click()
     await this.page.waitForTimeout(200);
-    await takeScreenshot(this.page, this.testInfo, 'delete_member');
-    await this.deleteMember.click();
+    await takeScreenshot(this.page, this.testInfo, 'Delete member');
+    if (!content?.includes('Delete member')) {
+      await this.deleteMember.click();
+    }
+    await takeScreenshot(this.page, this.testInfo, 'Delete member confirm');
+    if (await this.deleteConfirm.count() > 1) {
+      // Get only the first one
+      await this.deleteConfirm.nth(0).click();
+    } else {
+      await this.deleteConfirm.click();
+    }
     await this.page.waitForTimeout(200);
     await this.page.keyboard.press('Enter');
     await navigation;
@@ -167,9 +185,9 @@ export class MembersPage {
 
   async filterMembers(word: string) {
     let navigation = this.page.waitForNavigation({ waitUntil: 'networkidle' });
-    await takeScreenshot(this.page, this.testInfo, 'filter_members');
     await this.search.fill(word);
     await this.page.waitForTimeout(100);
+    await takeScreenshot(this.page, this.testInfo, 'Filter member');
     await this.page.keyboard.press('Enter');
     await this.page.waitForTimeout(200);
     await navigation;
@@ -178,12 +196,14 @@ export class MembersPage {
   async removeLabelMultiple(label: string) {
     await this.actions.click();
     await this.page.locator('button', { hasText: "Remove label from selected" }).click();
+    await takeScreenshot(this.page, this.testInfo, 'Remove label from selected');
     let option = await this.page.locator('option', { hasText: label }).elementHandle()
     let select = this.page.locator(`//select[./option[contains(., '${label}')]]`)
     await select.selectOption(option)
+    await takeScreenshot(this.page, this.testInfo, 'Remove label with name');
     this.page.locator("//button/span[normalize-space()='Remove Label']").click()
     await this.page.waitForTimeout(1000);
-    await this.page.locator("//button/span[normalize-space()='Close']").click()
+    await this.page.locator('.modal-content').locator("//button/span[normalize-space()='Close']").click()
     await this.page.waitForTimeout(100);
     await this.page.keyboard.press('Escape');
   }
@@ -191,9 +211,12 @@ export class MembersPage {
   async deleteMemberMultiple() {
     await this.actions.click();
     await this.page.waitForTimeout(1000);
+    await takeScreenshot(this.page, this.testInfo, 'Multiple action');
     await this.page.locator('button', { hasText: "Delete selected members" }).click();
     await this.page.waitForTimeout(1000);
+    await takeScreenshot(this.page, this.testInfo, 'Multiple delete');
     await this.page.locator('button', { hasText: "Download backup" }).click();
+    await takeScreenshot(this.page, this.testInfo, 'Multiple delete backup');
     await this.page.waitForTimeout(100);
     // Close
     await this.page.keyboard.press('Escape');
@@ -203,8 +226,9 @@ export class MembersPage {
   async editMember({ currName, currEmail }: { currName?: string, currEmail?: string }, { name, email, notes, label }: { name?: string, email?: string, notes?: string, label?: string }) {
     await this.openMember({ name: currName, email: currEmail })
     await this.fillValues({ name, email, notes, label });
-    await takeScreenshot(this.page, this.testInfo, 'edit_member');
+    await takeScreenshot(this.page, this.testInfo, 'Edit member');
     await this.save.click();
+    await takeScreenshot(this.page, this.testInfo, 'Edit member saved');
     // Return false if it finds the retry button else true
     try {
       await this.retry.waitFor({ timeout: 1000 })
