@@ -3,19 +3,91 @@
     "version": "4.36",
     "scenarios": [
       {
-        "name": "Create Member with same name",
+        "name": "Create and delete it",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create Member with same name/002_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create and delete it/073_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create Member with same name/003_create_member.png"
+            "name": "open new post page",
+            "image": "./screenshots/playwright/4.36/Create and delete it/074_open_new_post_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create Member with same name/004_create_member.png"
+            "name": "select publish option",
+            "image": "./screenshots/playwright/4.36/Create and delete it/075_select_publish_option.png"
+          },
+          {
+            "name": "open posts page",
+            "image": "./screenshots/playwright/4.36/Create and delete it/076_open_posts_page.png"
+          },
+          {
+            "name": "open post settings",
+            "image": "./screenshots/playwright/4.36/Create and delete it/077_open_post_settings.png"
+          },
+          {
+            "name": "confirm delete",
+            "image": "./screenshots/playwright/4.36/Create and delete it/078_confirm_delete.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create and edit it",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.36/Create and edit it/068_open_login_page.png"
+          },
+          {
+            "name": "open new post page",
+            "image": "./screenshots/playwright/4.36/Create and edit it/069_open_new_post_page.png"
+          },
+          {
+            "name": "select publish option",
+            "image": "./screenshots/playwright/4.36/Create and edit it/070_select_publish_option.png"
+          },
+          {
+            "name": "open posts page",
+            "image": "./screenshots/playwright/4.36/Create and edit it/071_open_posts_page.png"
+          },
+          {
+            "name": "select update option",
+            "image": "./screenshots/playwright/4.36/Create and edit it/072_select_update_option.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create duplicate email",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/014_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/015_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/016_Member saved.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/017_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/018_Member saved.png"
+          },
+          {
+            "name": "Edit member",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/019_Edit member.png"
+          },
+          {
+            "name": "Edit member saved",
+            "image": "./screenshots/playwright/4.36/Create duplicate email/020_Edit member saved.png"
           }
         ],
         "file": "whatever"
@@ -28,30 +100,12 @@
             "image": "./screenshots/playwright/4.36/Create member/000_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member/001_create_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create member duplicate email",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create member duplicate email/009_open_login_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create member/001_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member duplicate email/010_create_member.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member duplicate email/011_create_member.png"
-          },
-          {
-            "name": "edit member",
-            "image": "./screenshots/playwright/4.36/Create member duplicate email/012_edit_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create member/002_Member saved.png"
           }
         ],
         "file": "whatever"
@@ -61,77 +115,49 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create member invalid email/005_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create member invalid email/008_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member invalid email/006_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create member invalid email/009_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create member invalid email/010_Member saved.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create member retry",
+        "name": "Create multiple with the same title",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create member retry/013_open_login_page.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member retry/014_create_member.png"
-          },
-          {
-            "name": "retry member",
-            "image": "./screenshots/playwright/4.36/Create member retry/015_retry_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create member without name",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create member without name/007_open_login_page.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Create member without name/008_create_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create multiple post with the same title",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/036_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/061_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/037_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/062_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/038_select_publish_option.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/063_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/039_open_posts_page.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/064_open_posts_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/040_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/065_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/041_select_publish_option.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/066_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create multiple post with the same title/042_open_posts_page.png"
+            "image": "./screenshots/playwright/4.36/Create multiple with the same title/067_open_posts_page.png"
           }
         ],
         "file": "whatever"
@@ -141,97 +167,175 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create post/028_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create post/053_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create post/029_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.36/Create post/054_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create post/030_select_publish_option.png"
+            "image": "./screenshots/playwright/4.36/Create post/055_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create post/031_open_posts_page.png"
+            "image": "./screenshots/playwright/4.36/Create post/056_open_posts_page.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post and delete it",
+        "name": "Create retry",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/048_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create retry/021_open_login_page.png"
           },
           {
-            "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/049_open_new_post_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create retry/022_Create member.png"
           },
           {
-            "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/050_select_publish_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create retry/023_Member saved.png"
           },
           {
-            "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/051_open_posts_page.png"
-          },
-          {
-            "name": "open post settings",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/052_open_post_settings.png"
-          },
-          {
-            "name": "confirm delete",
-            "image": "./screenshots/playwright/4.36/Create post and delete it/053_confirm_delete.png"
+            "name": "retry member",
+            "image": "./screenshots/playwright/4.36/Create retry/024_retry_member.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post and edit it",
+        "name": "Create with same name",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create post and edit it/043_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create with same name/003_open_login_page.png"
           },
           {
-            "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create post and edit it/044_open_new_post_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create with same name/004_Create member.png"
           },
           {
-            "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create post and edit it/045_select_publish_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create with same name/005_Member saved.png"
           },
           {
-            "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create post and edit it/046_open_posts_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create with same name/006_Create member.png"
           },
           {
-            "name": "select update option",
-            "image": "./screenshots/playwright/4.36/Create post and edit it/047_select_update_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create with same name/007_Member saved.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post without content",
+        "name": "Create without content",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Create post without content/032_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Create without content/057_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.36/Create post without content/033_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.36/Create without content/058_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.36/Create post without content/034_select_publish_option.png"
+            "image": "./screenshots/playwright/4.36/Create without content/059_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.36/Create post without content/035_open_posts_page.png"
+            "image": "./screenshots/playwright/4.36/Create without content/060_open_posts_page.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create without name",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.36/Create without name/011_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Create without name/012_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Create without name/013_Member saved.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Delete member",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.36/Delete member/025_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Delete member/026_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Delete member/027_Member saved.png"
+          },
+          {
+            "name": "Delete member",
+            "image": "./screenshots/playwright/4.36/Delete member/028_Delete member.png"
+          },
+          {
+            "name": "Delete member confirm",
+            "image": "./screenshots/playwright/4.36/Delete member/029_Delete member confirm.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Filter delete",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.36/Filter delete/036_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter delete/037_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter delete/038_Member saved.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter delete/039_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter delete/040_Member saved.png"
+          },
+          {
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.36/Filter delete/041_Filter member.png"
+          },
+          {
+            "name": "Multiple action",
+            "image": "./screenshots/playwright/4.36/Filter delete/042_Multiple action.png"
+          },
+          {
+            "name": "Multiple delete",
+            "image": "./screenshots/playwright/4.36/Filter delete/043_Multiple delete.png"
+          },
+          {
+            "name": "Multiple delete backup",
+            "image": "./screenshots/playwright/4.36/Filter delete/044_Multiple delete backup.png"
           }
         ],
         "file": "whatever"
@@ -241,63 +345,65 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Filter member/016_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Filter member/030_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member/017_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter member/031_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member/018_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter member/032_Member saved.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.36/Filter member/019_filter_members.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter member/033_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter member/034_Member saved.png"
+          },
+          {
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.36/Filter member/035_Filter member.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Filter member delete",
+        "name": "Filter remove label",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Filter member delete/020_open_login_page.png"
+            "image": "./screenshots/playwright/4.36/Filter remove label/045_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member delete/021_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter remove label/046_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member delete/022_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter remove label/047_Member saved.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.36/Filter member delete/023_filter_members.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Filter member remove label",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.36/Filter member remove label/024_open_login_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.36/Filter remove label/048_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member remove label/025_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.36/Filter remove label/049_Member saved.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.36/Filter member remove label/026_create_member.png"
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.36/Filter remove label/050_Filter member.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.36/Filter member remove label/027_filter_members.png"
+            "name": "Remove label from selected",
+            "image": "./screenshots/playwright/4.36/Filter remove label/051_Remove label from selected.png"
+          },
+          {
+            "name": "Remove label with name",
+            "image": "./screenshots/playwright/4.36/Filter remove label/052_Remove label with name.png"
           }
         ],
         "file": "whatever"
@@ -308,19 +414,91 @@
     "version": "4.41",
     "scenarios": [
       {
-        "name": "Create Member with same name",
+        "name": "Create and delete it",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create Member with same name/002_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create and delete it/073_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create Member with same name/003_create_member.png"
+            "name": "open new post page",
+            "image": "./screenshots/playwright/4.41/Create and delete it/074_open_new_post_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create Member with same name/004_create_member.png"
+            "name": "select publish option",
+            "image": "./screenshots/playwright/4.41/Create and delete it/075_select_publish_option.png"
+          },
+          {
+            "name": "open posts page",
+            "image": "./screenshots/playwright/4.41/Create and delete it/076_open_posts_page.png"
+          },
+          {
+            "name": "open post settings",
+            "image": "./screenshots/playwright/4.41/Create and delete it/077_open_post_settings.png"
+          },
+          {
+            "name": "confirm delete",
+            "image": "./screenshots/playwright/4.41/Create and delete it/078_confirm_delete.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create and edit it",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.41/Create and edit it/068_open_login_page.png"
+          },
+          {
+            "name": "open new post page",
+            "image": "./screenshots/playwright/4.41/Create and edit it/069_open_new_post_page.png"
+          },
+          {
+            "name": "select publish option",
+            "image": "./screenshots/playwright/4.41/Create and edit it/070_select_publish_option.png"
+          },
+          {
+            "name": "open posts page",
+            "image": "./screenshots/playwright/4.41/Create and edit it/071_open_posts_page.png"
+          },
+          {
+            "name": "select update option",
+            "image": "./screenshots/playwright/4.41/Create and edit it/072_select_update_option.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create duplicate email",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/014_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/015_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/016_Member saved.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/017_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/018_Member saved.png"
+          },
+          {
+            "name": "Edit member",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/019_Edit member.png"
+          },
+          {
+            "name": "Edit member saved",
+            "image": "./screenshots/playwright/4.41/Create duplicate email/020_Edit member saved.png"
           }
         ],
         "file": "whatever"
@@ -333,30 +511,12 @@
             "image": "./screenshots/playwright/4.41/Create member/000_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member/001_create_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create member duplicate email",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create member duplicate email/009_open_login_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create member/001_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member duplicate email/010_create_member.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member duplicate email/011_create_member.png"
-          },
-          {
-            "name": "edit member",
-            "image": "./screenshots/playwright/4.41/Create member duplicate email/012_edit_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create member/002_Member saved.png"
           }
         ],
         "file": "whatever"
@@ -366,77 +526,49 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create member invalid email/005_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create member invalid email/008_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member invalid email/006_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create member invalid email/009_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create member invalid email/010_Member saved.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create member retry",
+        "name": "Create multiple with the same title",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create member retry/013_open_login_page.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member retry/014_create_member.png"
-          },
-          {
-            "name": "retry member",
-            "image": "./screenshots/playwright/4.41/Create member retry/015_retry_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create member without name",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create member without name/007_open_login_page.png"
-          },
-          {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Create member without name/008_create_member.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Create multiple post with the same title",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/036_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/061_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/037_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/062_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/038_select_publish_option.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/063_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/039_open_posts_page.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/064_open_posts_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/040_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/065_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/041_select_publish_option.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/066_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create multiple post with the same title/042_open_posts_page.png"
+            "image": "./screenshots/playwright/4.41/Create multiple with the same title/067_open_posts_page.png"
           }
         ],
         "file": "whatever"
@@ -446,97 +578,175 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create post/028_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create post/053_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create post/029_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.41/Create post/054_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create post/030_select_publish_option.png"
+            "image": "./screenshots/playwright/4.41/Create post/055_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create post/031_open_posts_page.png"
+            "image": "./screenshots/playwright/4.41/Create post/056_open_posts_page.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post and delete it",
+        "name": "Create retry",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/048_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create retry/021_open_login_page.png"
           },
           {
-            "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/049_open_new_post_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create retry/022_Create member.png"
           },
           {
-            "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/050_select_publish_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create retry/023_Member saved.png"
           },
           {
-            "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/051_open_posts_page.png"
-          },
-          {
-            "name": "open post settings",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/052_open_post_settings.png"
-          },
-          {
-            "name": "confirm delete",
-            "image": "./screenshots/playwright/4.41/Create post and delete it/053_confirm_delete.png"
+            "name": "retry member",
+            "image": "./screenshots/playwright/4.41/Create retry/024_retry_member.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post and edit it",
+        "name": "Create with same name",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create post and edit it/043_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create with same name/003_open_login_page.png"
           },
           {
-            "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create post and edit it/044_open_new_post_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create with same name/004_Create member.png"
           },
           {
-            "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create post and edit it/045_select_publish_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create with same name/005_Member saved.png"
           },
           {
-            "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create post and edit it/046_open_posts_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create with same name/006_Create member.png"
           },
           {
-            "name": "select update option",
-            "image": "./screenshots/playwright/4.41/Create post and edit it/047_select_update_option.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create with same name/007_Member saved.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Create post without content",
+        "name": "Create without content",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Create post without content/032_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Create without content/057_open_login_page.png"
           },
           {
             "name": "open new post page",
-            "image": "./screenshots/playwright/4.41/Create post without content/033_open_new_post_page.png"
+            "image": "./screenshots/playwright/4.41/Create without content/058_open_new_post_page.png"
           },
           {
             "name": "select publish option",
-            "image": "./screenshots/playwright/4.41/Create post without content/034_select_publish_option.png"
+            "image": "./screenshots/playwright/4.41/Create without content/059_select_publish_option.png"
           },
           {
             "name": "open posts page",
-            "image": "./screenshots/playwright/4.41/Create post without content/035_open_posts_page.png"
+            "image": "./screenshots/playwright/4.41/Create without content/060_open_posts_page.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Create without name",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.41/Create without name/011_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Create without name/012_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Create without name/013_Member saved.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Delete member",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.41/Delete member/025_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Delete member/026_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Delete member/027_Member saved.png"
+          },
+          {
+            "name": "Delete member",
+            "image": "./screenshots/playwright/4.41/Delete member/028_Delete member.png"
+          },
+          {
+            "name": "Delete member confirm",
+            "image": "./screenshots/playwright/4.41/Delete member/029_Delete member confirm.png"
+          }
+        ],
+        "file": "whatever"
+      },
+      {
+        "name": "Filter delete",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "./screenshots/playwright/4.41/Filter delete/036_open_login_page.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter delete/037_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter delete/038_Member saved.png"
+          },
+          {
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter delete/039_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter delete/040_Member saved.png"
+          },
+          {
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.41/Filter delete/041_Filter member.png"
+          },
+          {
+            "name": "Multiple action",
+            "image": "./screenshots/playwright/4.41/Filter delete/042_Multiple action.png"
+          },
+          {
+            "name": "Multiple delete",
+            "image": "./screenshots/playwright/4.41/Filter delete/043_Multiple delete.png"
+          },
+          {
+            "name": "Multiple delete backup",
+            "image": "./screenshots/playwright/4.41/Filter delete/044_Multiple delete backup.png"
           }
         ],
         "file": "whatever"
@@ -546,63 +756,65 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Filter member/016_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Filter member/030_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member/017_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter member/031_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member/018_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter member/032_Member saved.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.41/Filter member/019_filter_members.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter member/033_Create member.png"
+          },
+          {
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter member/034_Member saved.png"
+          },
+          {
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.41/Filter member/035_Filter member.png"
           }
         ],
         "file": "whatever"
       },
       {
-        "name": "Filter member delete",
+        "name": "Filter remove label",
         "steps": [
           {
             "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Filter member delete/020_open_login_page.png"
+            "image": "./screenshots/playwright/4.41/Filter remove label/045_open_login_page.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member delete/021_create_member.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter remove label/046_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member delete/022_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter remove label/047_Member saved.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.41/Filter member delete/023_filter_members.png"
-          }
-        ],
-        "file": "whatever"
-      },
-      {
-        "name": "Filter member remove label",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "./screenshots/playwright/4.41/Filter member remove label/024_open_login_page.png"
+            "name": "Create member",
+            "image": "./screenshots/playwright/4.41/Filter remove label/048_Create member.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member remove label/025_create_member.png"
+            "name": "Member saved",
+            "image": "./screenshots/playwright/4.41/Filter remove label/049_Member saved.png"
           },
           {
-            "name": "create member",
-            "image": "./screenshots/playwright/4.41/Filter member remove label/026_create_member.png"
+            "name": "Filter member",
+            "image": "./screenshots/playwright/4.41/Filter remove label/050_Filter member.png"
           },
           {
-            "name": "filter members",
-            "image": "./screenshots/playwright/4.41/Filter member remove label/027_filter_members.png"
+            "name": "Remove label from selected",
+            "image": "./screenshots/playwright/4.41/Filter remove label/051_Remove label from selected.png"
+          },
+          {
+            "name": "Remove label with name",
+            "image": "./screenshots/playwright/4.41/Filter remove label/052_Remove label with name.png"
           }
         ],
         "file": "whatever"
@@ -613,73 +825,415 @@
     "version": "combined",
     "scenarios": [
       {
-        "name": "Create Member with same name",
+        "name": "Create and delete it",
         "file": "whatever",
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/2e114f56-487a-4b08-9764-9dda2f89d6e4.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/99b0be8d-1228-47b3-9dc6-58cd604f978c.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create Member with same name/002_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create Member with same name/002_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create and delete it/073_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/073_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 82
+              "analysisTime": 122
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/f0301f09-c4a4-4ff2-9fe3-cab5a1de54b1.png",
+            "name": "open new post page",
+            "image": "screenshots/playwright/report_4.36_4.41images/b585e71c-76eb-44d4-bdb9-7ab3293f3fb5.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create Member with same name/003_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create Member with same name/003_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Create and delete it/074_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/074_open_new_post_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
+              "rawMisMatchPercentage": 0,
+              "misMatchPercentage": "0.00",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
+                "top": 720,
+                "left": 1280,
+                "bottom": 0,
+                "right": 0
               },
-              "analysisTime": 62
+              "analysisTime": 76
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/8261fb63-3956-47be-a047-7022c9d2c30c.png",
+            "name": "select publish option",
+            "image": "screenshots/playwright/report_4.36_4.41images/3fc3e5d5-b8a4-4e3c-a3a7-c7a4c26a3b1f.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create Member with same name/004_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create Member with same name/004_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Create and delete it/075_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/075_select_publish_option.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.22764756944444442,
-              "misMatchPercentage": "0.23",
+              "rawMisMatchPercentage": 0.4832899305555556,
+              "misMatchPercentage": "0.48",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 224,
-                "right": 1172
+                "top": 291,
+                "left": 271,
+                "bottom": 411,
+                "right": 1181
               },
-              "analysisTime": 47
+              "analysisTime": 144
+            }
+          },
+          {
+            "name": "open posts page",
+            "image": "screenshots/playwright/report_4.36_4.41images/67f77c96-03b9-4dcd-bf60-7b69e8bafa96.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and delete it/076_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/076_open_posts_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.039605034722222224,
+              "misMatchPercentage": "0.04",
+              "diffBounds": {
+                "top": 86,
+                "left": 370,
+                "bottom": 109,
+                "right": 448
+              },
+              "analysisTime": 56
+            }
+          },
+          {
+            "name": "open post settings",
+            "image": "screenshots/playwright/report_4.36_4.41images/a5182c0f-df0d-4fb6-8f07-f8e9f81d9260.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and delete it/077_open_post_settings.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/077_open_post_settings.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.2760416666666667,
+              "misMatchPercentage": "0.28",
+              "diffBounds": {
+                "top": 291,
+                "left": 93,
+                "bottom": 403,
+                "right": 1127
+              },
+              "analysisTime": 55
+            }
+          },
+          {
+            "name": "confirm delete",
+            "image": "screenshots/playwright/report_4.36_4.41images/5879e6af-154a-49c0-8801-14c00eef9dad.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and delete it/078_confirm_delete.png",
+              "post": "./screenshots/playwright/4.41/Create and delete it/078_confirm_delete.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.14529079861111113,
+              "misMatchPercentage": "0.15",
+              "diffBounds": {
+                "top": 367,
+                "left": 93,
+                "bottom": 385,
+                "right": 771
+              },
+              "analysisTime": 59
+            }
+          }
+        ]
+      },
+      {
+        "name": "Create and edit it",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/6825991b-923a-4a16-a0a1-464c61615532.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and edit it/068_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create and edit it/068_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 94
+            }
+          },
+          {
+            "name": "open new post page",
+            "image": "screenshots/playwright/report_4.36_4.41images/af5f8037-4e73-4077-a24d-5ed079271129.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and edit it/069_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create and edit it/069_open_new_post_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0,
+              "misMatchPercentage": "0.00",
+              "diffBounds": {
+                "top": 720,
+                "left": 1280,
+                "bottom": 0,
+                "right": 0
+              },
+              "analysisTime": 54
+            }
+          },
+          {
+            "name": "select publish option",
+            "image": "screenshots/playwright/report_4.36_4.41images/a8cdf816-16a3-4a48-8d0a-46942c9b98fc.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and edit it/070_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create and edit it/070_select_publish_option.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.4544270833333333,
+              "misMatchPercentage": "0.45",
+              "diffBounds": {
+                "top": 291,
+                "left": 281,
+                "bottom": 411,
+                "right": 1181
+              },
+              "analysisTime": 93
+            }
+          },
+          {
+            "name": "open posts page",
+            "image": "screenshots/playwright/report_4.36_4.41images/859e4bb5-b5d7-4e68-ae0b-e9603989c574.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and edit it/071_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create and edit it/071_open_posts_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.3454861111111111,
+              "misMatchPercentage": "0.35",
+              "diffBounds": {
+                "top": 86,
+                "left": 369,
+                "bottom": 699,
+                "right": 1186
+              },
+              "analysisTime": 66
+            }
+          },
+          {
+            "name": "select update option",
+            "image": "screenshots/playwright/report_4.36_4.41images/03b670f3-30aa-45e0-900a-3a2e4e6ac479.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create and edit it/072_select_update_option.png",
+              "post": "./screenshots/playwright/4.41/Create and edit it/072_select_update_option.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.2746310763888889,
+              "misMatchPercentage": "0.27",
+              "diffBounds": {
+                "top": 496,
+                "left": 281,
+                "bottom": 514,
+                "right": 967
+              },
+              "analysisTime": 64
+            }
+          }
+        ]
+      },
+      {
+        "name": "Create duplicate email",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/0a18fec6-c452-4978-988a-56691b247a49.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/014_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/014_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 114
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/8a587e6b-6ee3-4507-bc36-728cf1ba26d6.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/015_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/015_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 70
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/bf874a99-3833-4cdb-9762-3b42e07314cb.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/016_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/016_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.8467881944444444,
+              "misMatchPercentage": "1.85",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 76
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/4febd1e7-1221-46d5-8ec3-349a3c0d373a.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/017_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/017_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 86
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/dd102a41-3485-429a-8396-cbad084a18ad.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/018_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/018_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.8420138888888888,
+              "misMatchPercentage": "1.84",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 86
+            }
+          },
+          {
+            "name": "Edit member",
+            "image": "screenshots/playwright/report_4.36_4.41images/1b5a5801-69f1-42ca-95dc-09af6cbe7f7f.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/019_Edit member.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/019_Edit member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.0746527777777777,
+              "misMatchPercentage": "2.07",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 710,
+                "right": 1207
+              },
+              "analysisTime": 86
+            }
+          },
+          {
+            "name": "Edit member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/5ad6d8c4-da73-49af-b12b-aff9f01c1579.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create duplicate email/020_Edit member saved.png",
+              "post": "./screenshots/playwright/4.41/Create duplicate email/020_Edit member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7979600694444444,
+              "misMatchPercentage": "1.80",
+              "diffBounds": {
+                "top": 142,
+                "left": 364,
+                "bottom": 719,
+                "right": 1205
+              },
+              "analysisTime": 108
             }
           }
         ]
@@ -690,7 +1244,7 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/9cb4a856-74e7-401e-a75b-eca0d33cb691.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/55412916-d47e-44e3-aba1-c51a16ce20ed.png",
             "data": {
               "prev": "./screenshots/playwright/4.36/Create member/000_open_login_page.png",
               "post": "./screenshots/playwright/4.41/Create member/000_open_login_page.png",
@@ -699,131 +1253,59 @@
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 68
+              "analysisTime": 105
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/3ec561a4-0611-41dc-ac1b-0f5bba3d6acf.png",
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/1a517479-3882-4880-bb57-58f628d7e480.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create member/001_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member/001_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Create member/001_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create member/001_Create member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 32
-            }
-          }
-        ]
-      },
-      {
-        "name": "Create member duplicate email",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/738866a3-4f1f-456e-b15e-ccb075696a00.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member duplicate email/009_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create member duplicate email/009_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 67
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/d04b2784-8103-48c7-a7f8-68e674ec61d3.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member duplicate email/010_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member duplicate email/010_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 31
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/e3868ef8-9d08-47fe-8ebd-6dc0952118b1.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member duplicate email/011_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member duplicate email/011_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.21983506944444448,
-              "misMatchPercentage": "0.22",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 224,
-                "right": 1177
-              },
-              "analysisTime": 31
-            }
-          },
-          {
-            "name": "edit member",
-            "image": "screenshots/playwright/report_4.36_4.41images/2a51ae6e-fbcf-4625-a14b-21b75569bad4.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member duplicate email/012_edit_member.png",
-              "post": "./screenshots/playwright/4.41/Create member duplicate email/012_edit_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.238498263888889,
-              "misMatchPercentage": "2.24",
-              "diffBounds": {
-                "top": 40,
+                "top": 163,
                 "left": 364,
-                "bottom": 719,
-                "right": 1207
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 49
+              "analysisTime": 78
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/ac4144a0-c968-4dee-9571-45597fbc0081.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create member/002_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create member/002_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.6140407986111112,
+              "misMatchPercentage": "1.61",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 90
             }
           }
         ]
@@ -834,204 +1316,104 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/b8961914-20f1-459c-9a62-8582adc71483.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/668fa8cf-4181-4b90-8f43-a50ba39c7c39.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create member invalid email/005_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create member invalid email/005_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create member invalid email/008_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create member invalid email/008_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 67
+              "analysisTime": 106
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/9302c009-fd20-415a-ad84-7e900808a01a.png",
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/2c9763bb-76a0-4476-99e8-4851f6160482.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create member invalid email/006_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member invalid email/006_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Create member invalid email/009_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create member invalid email/009_Create member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 31
-            }
-          }
-        ]
-      },
-      {
-        "name": "Create member retry",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/e97ffbca-63ea-4e3e-ac2f-0eb61917b47c.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member retry/013_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create member retry/013_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 67
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/12f1ac22-e077-4517-8e82-e797ec6b6052.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member retry/014_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member retry/014_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 30
-            }
-          },
-          {
-            "name": "retry member",
-            "image": "screenshots/playwright/report_4.36_4.41images/f9cea517-b0d3-4a7a-b956-866a84169338.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member retry/015_retry_member.png",
-              "post": "./screenshots/playwright/4.41/Create member retry/015_retry_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 1.6623263888888888,
-              "misMatchPercentage": "1.66",
-              "diffBounds": {
-                "top": 112,
+                "top": 163,
                 "left": 364,
-                "bottom": 711,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 79
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/0b3adcef-bb5c-4957-8986-cdbfc01e8fc6.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create member invalid email/010_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create member invalid email/010_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.6182725694444444,
+              "misMatchPercentage": "1.62",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 715,
                 "right": 1207
               },
-              "analysisTime": 47
+              "analysisTime": 114
             }
           }
         ]
       },
       {
-        "name": "Create member without name",
+        "name": "Create multiple with the same title",
         "file": "whatever",
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/cd9ab644-1904-41e8-ad6e-40cf55f991c7.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/da7ea044-9ba0-4aa1-9cd0-0100138c7a43.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create member without name/007_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create member without name/007_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/061_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/061_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 68
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/9636f4b0-a694-4758-b574-ab397e7918e9.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create member without name/008_create_member.png",
-              "post": "./screenshots/playwright/4.41/Create member without name/008_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 31
-            }
-          }
-        ]
-      },
-      {
-        "name": "Create multiple post with the same title",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/30e72109-1bc8-4344-82fa-74b5c81db90e.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/036_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/036_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 66
+              "analysisTime": 105
             }
           },
           {
             "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/524e9c26-276d-4061-a674-d800a8c4d646.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/5109077c-c203-47d9-8e25-98d17fb2552c.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/037_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/037_open_new_post_page.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/062_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/062_open_new_post_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
@@ -1045,59 +1427,59 @@
                 "bottom": 0,
                 "right": 0
               },
-              "analysisTime": 30
+              "analysisTime": 60
             }
           },
           {
             "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/50f934fe-13ce-4407-8a4e-48ff1a7f09df.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/5b242f7f-86de-4325-a6e9-5cbcef24ecc1.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/038_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/038_select_publish_option.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/063_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/063_select_publish_option.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.5755208333333334,
-              "misMatchPercentage": "0.58",
+              "rawMisMatchPercentage": 0.7584635416666666,
+              "misMatchPercentage": "0.76",
               "diffBounds": {
-                "top": 241,
+                "top": 291,
                 "left": 271,
-                "bottom": 411,
+                "bottom": 435,
                 "right": 1181
               },
-              "analysisTime": 34
+              "analysisTime": 67
             }
           },
           {
             "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/a7c4aaa6-f6b1-440d-a626-40a013178932.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/32ebd886-101c-493b-8bd5-62af40fb46ab.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/039_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/039_open_posts_page.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/064_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/064_open_posts_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 1.3646918402777777,
-              "misMatchPercentage": "1.36",
+              "rawMisMatchPercentage": 0.8528645833333333,
+              "misMatchPercentage": "0.85",
               "diffBounds": {
-                "top": 37,
+                "top": 86,
                 "left": 368,
-                "bottom": 705,
-                "right": 1184
+                "bottom": 699,
+                "right": 1186
               },
-              "analysisTime": 37
+              "analysisTime": 77
             }
           },
           {
             "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/89c97508-02c7-4374-8a94-7b80c2b305e1.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/3e788d38-1205-4a5d-80fe-4d43478971c3.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/040_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/040_open_new_post_page.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/065_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/065_open_new_post_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
@@ -1111,51 +1493,51 @@
                 "bottom": 0,
                 "right": 0
               },
-              "analysisTime": 31
+              "analysisTime": 60
             }
           },
           {
             "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/af4cc4a4-d4d6-44ab-b73b-4e50995a474e.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/e4125a99-35a5-44ea-974c-374bc01b290b.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/041_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/041_select_publish_option.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/066_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/066_select_publish_option.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.5396050347222223,
-              "misMatchPercentage": "0.54",
+              "rawMisMatchPercentage": 0.46582031249999994,
+              "misMatchPercentage": "0.47",
               "diffBounds": {
-                "top": 241,
+                "top": 291,
                 "left": 271,
-                "bottom": 411,
+                "bottom": 425,
                 "right": 1181
               },
-              "analysisTime": 36
+              "analysisTime": 65
             }
           },
           {
             "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/7972eeb3-87dd-4242-9e1c-c9a34d189856.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/66577da2-c7d6-472f-82cb-713edad070ef.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create multiple post with the same title/042_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create multiple post with the same title/042_open_posts_page.png",
+              "prev": "./screenshots/playwright/4.36/Create multiple with the same title/067_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create multiple with the same title/067_open_posts_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 1.1639539930555556,
-              "misMatchPercentage": "1.16",
+              "rawMisMatchPercentage": 0.5592447916666666,
+              "misMatchPercentage": "0.56",
               "diffBounds": {
-                "top": 37,
-                "left": 368,
-                "bottom": 719,
-                "right": 1184
+                "top": 86,
+                "left": 369,
+                "bottom": 699,
+                "right": 1186
               },
-              "analysisTime": 37
+              "analysisTime": 67
             }
           }
         ]
@@ -1166,32 +1548,32 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/c54f2eef-12b3-4665-92bd-7c41992d76f0.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/4f282a74-7264-4288-8e23-0f101c67d07a.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post/028_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create post/028_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create post/053_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create post/053_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 68
+              "analysisTime": 104
             }
           },
           {
             "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/ce1ff98f-cc2b-4f83-a9fe-99caca6a0b6f.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/409a0a27-eda2-46b7-ad10-4b2a5ae8d7fd.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post/029_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create post/029_open_new_post_page.png",
+              "prev": "./screenshots/playwright/4.36/Create post/054_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create post/054_open_new_post_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
@@ -1205,225 +1587,297 @@
                 "bottom": 0,
                 "right": 0
               },
-              "analysisTime": 31
+              "analysisTime": 59
             }
           },
           {
             "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/c0e425b3-8ca4-4517-8e36-b5006c12e287.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/859ab7df-26d4-4186-b217-a37cf7125565.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post/030_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create post/030_select_publish_option.png",
+              "prev": "./screenshots/playwright/4.36/Create post/055_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create post/055_select_publish_option.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.21592881944444445,
-              "misMatchPercentage": "0.22",
+              "rawMisMatchPercentage": 0.2455512152777778,
+              "misMatchPercentage": "0.25",
               "diffBounds": {
-                "top": 241,
-                "left": 1043,
-                "bottom": 353,
-                "right": 1181
-              },
-              "analysisTime": 33
-            }
-          },
-          {
-            "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/a9a95033-aa9a-4876-bd27-5d43558498f4.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post/031_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create post/031_open_posts_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 1.3646918402777777,
-              "misMatchPercentage": "1.36",
-              "diffBounds": {
-                "top": 37,
-                "left": 368,
-                "bottom": 705,
-                "right": 1184
-              },
-              "analysisTime": 37
-            }
-          }
-        ]
-      },
-      {
-        "name": "Create post and delete it",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/93c74afd-9504-4a15-ad36-b276b102c17c.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/048_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/048_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 67
-            }
-          },
-          {
-            "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/0f1cdba9-03cd-4104-91cc-1def8eb9c00c.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/049_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/049_open_new_post_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0,
-              "misMatchPercentage": "0.00",
-              "diffBounds": {
-                "top": 720,
-                "left": 1280,
-                "bottom": 0,
-                "right": 0
-              },
-              "analysisTime": 31
-            }
-          },
-          {
-            "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/83ac66b7-2d50-44f7-b97f-cacf3e161644.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/050_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/050_select_publish_option.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.5250651041666667,
-              "misMatchPercentage": "0.53",
-              "diffBounds": {
-                "top": 243,
-                "left": 271,
+                "top": 291,
+                "left": 925,
                 "bottom": 411,
                 "right": 1181
               },
-              "analysisTime": 45
+              "analysisTime": 112
             }
           },
           {
             "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/f5fd2cec-147c-41e7-93cf-4c07010eaa80.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/ff3a6be7-ffa4-4f40-a751-cc8cb02f7f51.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/051_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/051_open_posts_page.png",
+              "prev": "./screenshots/playwright/4.36/Create post/056_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create post/056_open_posts_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 1.3646918402777777,
-              "misMatchPercentage": "1.36",
+              "rawMisMatchPercentage": 1.294379340277778,
+              "misMatchPercentage": "1.29",
               "diffBounds": {
-                "top": 37,
+                "top": 86,
                 "left": 368,
-                "bottom": 705,
-                "right": 1184
+                "bottom": 699,
+                "right": 1186
               },
-              "analysisTime": 37
-            }
-          },
-          {
-            "name": "open post settings",
-            "image": "screenshots/playwright/report_4.36_4.41images/ff02b7e2-16e3-4280-85a0-656ac4ed40a7.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/052_open_post_settings.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/052_open_post_settings.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.5843098958333334,
-              "misMatchPercentage": "0.58",
-              "diffBounds": {
-                "top": 242,
-                "left": 92,
-                "bottom": 443,
-                "right": 1129
-              },
-              "analysisTime": 33
-            }
-          },
-          {
-            "name": "confirm delete",
-            "image": "screenshots/playwright/report_4.36_4.41images/e11a8be7-3966-46ea-9139-4b7c454beb58.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and delete it/053_confirm_delete.png",
-              "post": "./screenshots/playwright/4.41/Create post and delete it/053_confirm_delete.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.2937282986111111,
-              "misMatchPercentage": "0.29",
-              "diffBounds": {
-                "top": 393,
-                "left": 93,
-                "bottom": 443,
-                "right": 806
-              },
-              "analysisTime": 33
+              "analysisTime": 73
             }
           }
         ]
       },
       {
-        "name": "Create post and edit it",
+        "name": "Create retry",
         "file": "whatever",
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/769d0cc3-94c9-475c-a769-6db13ca90365.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/9d381f9e-12a3-4a22-b014-09effcf36dd9.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and edit it/043_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and edit it/043_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create retry/021_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create retry/021_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 69
+              "analysisTime": 103
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/1ba3f812-d2c6-4316-b94b-0988326570e8.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create retry/022_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create retry/022_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 79
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/7ec3af69-8c0d-479f-aa80-b6fd511343ef.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create retry/023_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create retry/023_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.5807291666666667,
+              "misMatchPercentage": "1.58",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 715,
+                "right": 1207
+              },
+              "analysisTime": 83
+            }
+          },
+          {
+            "name": "retry member",
+            "image": "screenshots/playwright/report_4.36_4.41images/bc54965d-143b-455e-95d0-426dc00c91a4.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create retry/024_retry_member.png",
+              "post": "./screenshots/playwright/4.41/Create retry/024_retry_member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.5806206597222223,
+              "misMatchPercentage": "1.58",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 715,
+                "right": 1207
+              },
+              "analysisTime": 82
+            }
+          }
+        ]
+      },
+      {
+        "name": "Create with same name",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/0b24e582-deac-4cdb-a0d4-a0285fc28232.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create with same name/003_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create with same name/003_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 104
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/ed49f974-3d71-4fd6-a5ea-3a38705484ab.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create with same name/004_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create with same name/004_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 79
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/82c6eb05-7fa7-48c9-a24a-0c1cf6f526d0.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create with same name/005_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create with same name/005_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7381727430555556,
+              "misMatchPercentage": "1.74",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 85
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/9a78cc89-6ac9-4dbc-82e5-ef28c3dfdbf2.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create with same name/006_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create with same name/006_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 79
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/6a9d5792-076b-48df-bfae-c5f9e43655b8.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create with same name/007_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create with same name/007_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7170138888888888,
+              "misMatchPercentage": "1.72",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 91
+            }
+          }
+        ]
+      },
+      {
+        "name": "Create without content",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/8a672fc7-bbd2-4e17-8b14-24f907314946.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create without content/057_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create without content/057_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 103
             }
           },
           {
             "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/4c7a4bf3-b41d-4c38-aeb6-14bc004da898.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/3381bdf4-c6f6-4f83-8e6a-aede631a2da3.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and edit it/044_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and edit it/044_open_new_post_page.png",
+              "prev": "./screenshots/playwright/4.36/Create without content/058_open_new_post_page.png",
+              "post": "./screenshots/playwright/4.41/Create without content/058_open_new_post_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
@@ -1437,167 +1891,443 @@
                 "bottom": 0,
                 "right": 0
               },
-              "analysisTime": 30
+              "analysisTime": 61
             }
           },
           {
             "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/fffde252-7894-4cc5-b40a-0f9cbacb0cba.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/8a3f25c1-56fd-4939-b3ad-cbd62bd934f8.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and edit it/045_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create post and edit it/045_select_publish_option.png",
+              "prev": "./screenshots/playwright/4.36/Create without content/059_select_publish_option.png",
+              "post": "./screenshots/playwright/4.41/Create without content/059_select_publish_option.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.21549479166666666,
-              "misMatchPercentage": "0.22",
+              "rawMisMatchPercentage": 0.2455512152777778,
+              "misMatchPercentage": "0.25",
               "diffBounds": {
-                "top": 243,
-                "left": 1043,
-                "bottom": 353,
+                "top": 291,
+                "left": 925,
+                "bottom": 411,
                 "right": 1181
               },
-              "analysisTime": 33
+              "analysisTime": 65
             }
           },
           {
             "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/ae7edf2a-49ee-4232-986f-640c6e50ea67.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/b791a3fa-63e1-4079-acc3-ff90e4701032.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and edit it/046_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create post and edit it/046_open_posts_page.png",
+              "prev": "./screenshots/playwright/4.36/Create without content/060_open_posts_page.png",
+              "post": "./screenshots/playwright/4.41/Create without content/060_open_posts_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 1.3646918402777777,
-              "misMatchPercentage": "1.36",
+              "rawMisMatchPercentage": 1.0686848958333333,
+              "misMatchPercentage": "1.07",
               "diffBounds": {
-                "top": 37,
+                "top": 86,
                 "left": 368,
-                "bottom": 705,
-                "right": 1184
+                "bottom": 699,
+                "right": 1186
               },
-              "analysisTime": 36
-            }
-          },
-          {
-            "name": "select update option",
-            "image": "screenshots/playwright/report_4.36_4.41images/02e50249-fee4-465a-b3c1-e66ea94ca9b6.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Create post and edit it/047_select_update_option.png",
-              "post": "./screenshots/playwright/4.41/Create post and edit it/047_select_update_option.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0,
-              "misMatchPercentage": "0.00",
-              "diffBounds": {
-                "top": 720,
-                "left": 1280,
-                "bottom": 0,
-                "right": 0
-              },
-              "analysisTime": 30
+              "analysisTime": 69
             }
           }
         ]
       },
       {
-        "name": "Create post without content",
+        "name": "Create without name",
         "file": "whatever",
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/6751170e-c7f9-462c-a823-290e9d421ca5.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/bfadb0b6-93e5-4b0d-abcf-e9a74c9a95a8.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post without content/032_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Create post without content/032_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Create without name/011_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Create without name/011_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
+              },
+              "analysisTime": 103
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/8f149f99-3925-47e5-8445-90ae1bbf0e11.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create without name/012_Create member.png",
+              "post": "./screenshots/playwright/4.41/Create without name/012_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 87
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/e407bfca-108b-4bdf-a6fe-d667279676b2.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Create without name/013_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Create without name/013_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7663845486111112,
+              "misMatchPercentage": "1.77",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 86
+            }
+          }
+        ]
+      },
+      {
+        "name": "Delete member",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/91f5ea12-5fa7-430a-9854-a9a2859cd6cb.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Delete member/025_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Delete member/025_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 105
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/1bd95f1b-f776-47ab-a1e4-271f257ee9f9.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Delete member/026_Create member.png",
+              "post": "./screenshots/playwright/4.41/Delete member/026_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 89
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/ea4258cf-414f-4d79-bf03-e5fc3f6deb5b.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Delete member/027_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Delete member/027_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.8387586805555558,
+              "misMatchPercentage": "1.84",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 84
+            }
+          },
+          {
+            "name": "Delete member",
+            "image": "screenshots/playwright/report_4.36_4.41images/4539e1d2-6ff9-47a9-9871-570a3110dcd5.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Delete member/028_Delete member.png",
+              "post": "./screenshots/playwright/4.41/Delete member/028_Delete member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 62.430447048611114,
+              "misMatchPercentage": "62.43",
+              "diffBounds": {
+                "top": 1,
+                "left": 1,
+                "bottom": 719,
+                "right": 1279
+              },
+              "analysisTime": 509
+            }
+          },
+          {
+            "name": "Delete member confirm",
+            "image": "screenshots/playwright/report_4.36_4.41images/236fe1c1-ad90-49e4-b7ee-e641c8188b74.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Delete member/029_Delete member confirm.png",
+              "post": "./screenshots/playwright/4.41/Delete member/029_Delete member confirm.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.6722005208333334,
+              "misMatchPercentage": "0.67",
+              "diffBounds": {
+                "top": 95,
+                "left": 368,
+                "bottom": 633,
+                "right": 1205
+              },
+              "analysisTime": 75
+            }
+          }
+        ]
+      },
+      {
+        "name": "Filter delete",
+        "file": "whatever",
+        "steps": [
+          {
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/76098e75-bd5e-4b35-a8f9-83032faf6cf6.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/036_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/036_open_login_page.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
+              "diffBounds": {
+                "top": 58,
+                "left": 370,
+                "bottom": 530,
+                "right": 909
+              },
+              "analysisTime": 105
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/fa40afc5-648e-4d24-bc68-bc04a4d6135e.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/037_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/037_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 80
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/6275685a-89d3-4994-ae9a-65b08ae0127e.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/038_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/038_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7876519097222223,
+              "misMatchPercentage": "1.79",
+              "diffBounds": {
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 92
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/aa50b872-0072-42de-ae66-d5a4005dc64f.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/039_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/039_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
               },
               "analysisTime": 81
             }
           },
           {
-            "name": "open new post page",
-            "image": "screenshots/playwright/report_4.36_4.41images/d083c7a4-0d84-48c9-966b-f0c310ce05e2.png",
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/1d976968-bf59-4a96-b8b2-3b4717f60dc3.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post without content/033_open_new_post_page.png",
-              "post": "./screenshots/playwright/4.41/Create post without content/033_open_new_post_page.png",
+              "prev": "./screenshots/playwright/4.36/Filter delete/040_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/040_Member saved.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0,
-              "misMatchPercentage": "0.00",
+              "rawMisMatchPercentage": 1.8853081597222223,
+              "misMatchPercentage": "1.89",
               "diffBounds": {
-                "top": 720,
-                "left": 1280,
-                "bottom": 0,
-                "right": 0
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 31
+              "analysisTime": 84
             }
           },
           {
-            "name": "select publish option",
-            "image": "screenshots/playwright/report_4.36_4.41images/b5bfdf80-cefd-42a1-bee1-a5aea647457d.png",
+            "name": "Filter member",
+            "image": "screenshots/playwright/report_4.36_4.41images/de9c81e1-2f80-43ab-a38a-e548f33a0c5b.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post without content/034_select_publish_option.png",
-              "post": "./screenshots/playwright/4.41/Create post without content/034_select_publish_option.png",
+              "prev": "./screenshots/playwright/4.36/Filter delete/041_Filter member.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/041_Filter member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.21549479166666666,
-              "misMatchPercentage": "0.22",
+              "rawMisMatchPercentage": 0.29524739583333337,
+              "misMatchPercentage": "0.30",
               "diffBounds": {
-                "top": 241,
-                "left": 1043,
-                "bottom": 353,
-                "right": 1181
+                "top": 83,
+                "left": 370,
+                "bottom": 350,
+                "right": 1177
               },
-              "analysisTime": 33
+              "analysisTime": 62
             }
           },
           {
-            "name": "open posts page",
-            "image": "screenshots/playwright/report_4.36_4.41images/eb80216c-7fbc-4d41-8a85-2bc5ea81b117.png",
+            "name": "Multiple action",
+            "image": "screenshots/playwright/report_4.36_4.41images/4bb99f1f-bac1-44a6-b008-5289a68bd162.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Create post without content/035_open_posts_page.png",
-              "post": "./screenshots/playwright/4.41/Create post without content/035_open_posts_page.png",
+              "prev": "./screenshots/playwright/4.36/Filter delete/042_Multiple action.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/042_Multiple action.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 1.3646918402777777,
-              "misMatchPercentage": "1.36",
+              "rawMisMatchPercentage": 0.14171006944444445,
+              "misMatchPercentage": "0.14",
               "diffBounds": {
-                "top": 37,
-                "left": 368,
-                "bottom": 705,
-                "right": 1184
+                "top": 83,
+                "left": 370,
+                "bottom": 350,
+                "right": 1177
               },
-              "analysisTime": 37
+              "analysisTime": 63
+            }
+          },
+          {
+            "name": "Multiple delete",
+            "image": "screenshots/playwright/report_4.36_4.41images/ffd0e312-45c6-4dca-a4d9-16bc5e5af85d.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/043_Multiple delete.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/043_Multiple delete.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.07465277777777778,
+              "misMatchPercentage": "0.07",
+              "diffBounds": {
+                "top": 196,
+                "left": 731,
+                "bottom": 346,
+                "right": 1177
+              },
+              "analysisTime": 60
+            }
+          },
+          {
+            "name": "Multiple delete backup",
+            "image": "screenshots/playwright/report_4.36_4.41images/79bab856-ecdb-44a4-a97d-b6e0d7abdbc2.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter delete/044_Multiple delete backup.png",
+              "post": "./screenshots/playwright/4.41/Filter delete/044_Multiple delete backup.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.20822482638888887,
+              "misMatchPercentage": "0.21",
+              "diffBounds": {
+                "top": 196,
+                "left": 785,
+                "bottom": 717,
+                "right": 1163
+              },
+              "analysisTime": 63
             }
           }
         ]
@@ -1608,278 +2338,316 @@
         "steps": [
           {
             "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/75f3036e-0803-4df8-a2b8-7972c62ed677.png",
+            "image": "screenshots/playwright/report_4.36_4.41images/c218c78f-3133-4fea-963e-13ac68d60d77.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member/016_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Filter member/016_open_login_page.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/030_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Filter member/030_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
                 "top": 58,
                 "left": 370,
                 "bottom": 530,
                 "right": 909
               },
-              "analysisTime": 69
+              "analysisTime": 105
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/0970a0f0-f0b4-4c3c-9e8d-ba9a4d6588f1.png",
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/6d3dd8dc-7f2a-4857-97c7-2f08054de652.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member/017_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member/017_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/031_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter member/031_Create member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 34
+              "analysisTime": 78
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/5879446a-f659-45da-ab5a-cd2585fe1a5a.png",
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/e6b822e9-0f67-4dd6-a496-e536cf879b9f.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member/018_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member/018_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/032_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter member/032_Member saved.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.21983506944444448,
-              "misMatchPercentage": "0.22",
+              "rawMisMatchPercentage": 1.714301215277778,
+              "misMatchPercentage": "1.71",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 224,
-                "right": 1177
+                "top": 91,
+                "left": 365,
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 32
+              "analysisTime": 117
             }
           },
           {
-            "name": "filter members",
-            "image": "screenshots/playwright/report_4.36_4.41images/4e6a9d82-9e6a-4e92-affb-c976dcc71db8.png",
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/b2a951de-548c-4204-afa7-9dde422a2f55.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member/019_filter_members.png",
-              "post": "./screenshots/playwright/4.41/Filter member/019_filter_members.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/033_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter member/033_Create member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.2794053819444445,
-              "misMatchPercentage": "0.28",
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 299,
-                "right": 1177
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 33
-            }
-          }
-        ]
-      },
-      {
-        "name": "Filter member delete",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/9b9558c1-1d8b-4088-a1a4-bf9fb4601cca.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member delete/020_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Filter member delete/020_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 68
+              "analysisTime": 80
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/f8ca60b7-134b-41ac-a8c4-7ef60a30412e.png",
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/07ab6c4c-7075-41c0-9655-35c032ae15ed.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member delete/021_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member delete/021_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/034_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter member/034_Member saved.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
+              "rawMisMatchPercentage": 1.7407769097222223,
+              "misMatchPercentage": "1.74",
               "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
+                "top": 91,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
               },
-              "analysisTime": 32
+              "analysisTime": 82
             }
           },
           {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/6c032f06-1cce-48bb-8821-a23b35fdd652.png",
+            "name": "Filter member",
+            "image": "screenshots/playwright/report_4.36_4.41images/adc8288b-495a-4995-8a24-b05bc8c62a02.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member delete/022_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member delete/022_create_member.png",
+              "prev": "./screenshots/playwright/4.36/Filter member/035_Filter member.png",
+              "post": "./screenshots/playwright/4.41/Filter member/035_Filter member.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.21983506944444448,
-              "misMatchPercentage": "0.22",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 224,
-                "right": 1177
-              },
-              "analysisTime": 33
-            }
-          },
-          {
-            "name": "filter members",
-            "image": "screenshots/playwright/report_4.36_4.41images/fe97442a-bb00-48a5-aa39-da5e232cadf2.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member delete/023_filter_members.png",
-              "post": "./screenshots/playwright/4.41/Filter member delete/023_filter_members.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.2794053819444445,
-              "misMatchPercentage": "0.28",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 299,
-                "right": 1177
-              },
-              "analysisTime": 33
-            }
-          }
-        ]
-      },
-      {
-        "name": "Filter member remove label",
-        "file": "whatever",
-        "steps": [
-          {
-            "name": "open login page",
-            "image": "screenshots/playwright/report_4.36_4.41images/67797f4f-fe13-4fd4-a86c-5aba2bac90c1.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member remove label/024_open_login_page.png",
-              "post": "./screenshots/playwright/4.41/Filter member remove label/024_open_login_page.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 2.4545355902777777,
-              "misMatchPercentage": "2.45",
-              "diffBounds": {
-                "top": 58,
-                "left": 370,
-                "bottom": 530,
-                "right": 909
-              },
-              "analysisTime": 68
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/8bb65058-70bf-4707-839e-838985459917.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member remove label/025_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member remove label/025_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.05978732638888889,
-              "misMatchPercentage": "0.06",
-              "diffBounds": {
-                "top": 35,
-                "left": 370,
-                "bottom": 59,
-                "right": 497
-              },
-              "analysisTime": 31
-            }
-          },
-          {
-            "name": "create member",
-            "image": "screenshots/playwright/report_4.36_4.41images/52506e89-0f41-40e0-8a67-ea7672ec84ec.png",
-            "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member remove label/026_create_member.png",
-              "post": "./screenshots/playwright/4.41/Filter member remove label/026_create_member.png",
-              "isSameDimensions": true,
-              "dimensionDifference": {
-                "width": 0,
-                "height": 0
-              },
-              "rawMisMatchPercentage": 0.22764756944444442,
+              "rawMisMatchPercentage": 0.228515625,
               "misMatchPercentage": "0.23",
               "diffBounds": {
-                "top": 35,
+                "top": 83,
                 "left": 370,
-                "bottom": 224,
-                "right": 1172
+                "bottom": 274,
+                "right": 1181
               },
-              "analysisTime": 32
+              "analysisTime": 62
             }
-          },
+          }
+        ]
+      },
+      {
+        "name": "Filter remove label",
+        "file": "whatever",
+        "steps": [
           {
-            "name": "filter members",
-            "image": "screenshots/playwright/report_4.36_4.41images/04d5d9bc-c33f-466e-bb21-10ae15820c22.png",
+            "name": "open login page",
+            "image": "screenshots/playwright/report_4.36_4.41images/a2afa046-e2a8-4ae7-b321-57432da8df93.png",
             "data": {
-              "prev": "./screenshots/playwright/4.36/Filter member remove label/027_filter_members.png",
-              "post": "./screenshots/playwright/4.41/Filter member remove label/027_filter_members.png",
+              "prev": "./screenshots/playwright/4.36/Filter remove label/045_open_login_page.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/045_open_login_page.png",
               "isSameDimensions": true,
               "dimensionDifference": {
                 "width": 0,
                 "height": 0
               },
-              "rawMisMatchPercentage": 0.2842881944444444,
-              "misMatchPercentage": "0.28",
+              "rawMisMatchPercentage": 2.4756944444444446,
+              "misMatchPercentage": "2.48",
               "diffBounds": {
-                "top": 35,
+                "top": 58,
                 "left": 370,
-                "bottom": 299,
-                "right": 1178
+                "bottom": 530,
+                "right": 909
               },
-              "analysisTime": 33
+              "analysisTime": 103
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/8b5972be-593f-40b3-a0e7-260acfce67fb.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/046_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/046_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 79
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/2f5008e8-935c-431f-b53a-ab895ad1b32a.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/047_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/047_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.6980251736111112,
+              "misMatchPercentage": "1.70",
+              "diffBounds": {
+                "top": 91,
+                "left": 365,
+                "bottom": 718,
+                "right": 1205
+              },
+              "analysisTime": 83
+            }
+          },
+          {
+            "name": "Create member",
+            "image": "screenshots/playwright/report_4.36_4.41images/9a765b76-06c6-4ffe-aa66-de3f896c56ec.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/048_Create member.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/048_Create member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.1935763888888888,
+              "misMatchPercentage": "1.19",
+              "diffBounds": {
+                "top": 163,
+                "left": 364,
+                "bottom": 716,
+                "right": 1205
+              },
+              "analysisTime": 78
+            }
+          },
+          {
+            "name": "Member saved",
+            "image": "screenshots/playwright/report_4.36_4.41images/9b84a2f4-c811-4e4a-bade-ca6e80f0bf29.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/049_Member saved.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/049_Member saved.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 1.7330729166666665,
+              "misMatchPercentage": "1.73",
+              "diffBounds": {
+                "top": 91,
+                "left": 365,
+                "bottom": 718,
+                "right": 1205
+              },
+              "analysisTime": 82
+            }
+          },
+          {
+            "name": "Filter member",
+            "image": "screenshots/playwright/report_4.36_4.41images/1f233407-c899-466c-a9a3-b7cc9d7c5613.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/050_Filter member.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/050_Filter member.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.3052300347222222,
+              "misMatchPercentage": "0.31",
+              "diffBounds": {
+                "top": 83,
+                "left": 370,
+                "bottom": 350,
+                "right": 1174
+              },
+              "analysisTime": 63
+            }
+          },
+          {
+            "name": "Remove label from selected",
+            "image": "screenshots/playwright/report_4.36_4.41images/ea1ade5d-a416-4c85-99ee-b6ae5a971be6.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/051_Remove label from selected.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/051_Remove label from selected.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.0791015625,
+              "misMatchPercentage": "0.08",
+              "diffBounds": {
+                "top": 196,
+                "left": 722,
+                "bottom": 347,
+                "right": 1174
+              },
+              "analysisTime": 63
+            }
+          },
+          {
+            "name": "Remove label with name",
+            "image": "screenshots/playwright/report_4.36_4.41images/0fc0dd0b-08aa-433b-9b9f-2456b525eeba.png",
+            "data": {
+              "prev": "./screenshots/playwright/4.36/Filter remove label/052_Remove label with name.png",
+              "post": "./screenshots/playwright/4.41/Filter remove label/052_Remove label with name.png",
+              "isSameDimensions": true,
+              "dimensionDifference": {
+                "width": 0,
+                "height": 0
+              },
+              "rawMisMatchPercentage": 0.0791015625,
+              "misMatchPercentage": "0.08",
+              "diffBounds": {
+                "top": 196,
+                "left": 722,
+                "bottom": 347,
+                "right": 1174
+              },
+              "analysisTime": 61
             }
           }
         ]
